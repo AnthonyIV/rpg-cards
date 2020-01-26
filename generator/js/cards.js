@@ -298,11 +298,8 @@ function card_generate_contents(contents, card_data, options) {
         var element_name = parts[0];
         var element_params = parts.splice(1);
         var element_generator = card_element_generators[element_name];
-        if (element_generator) {
-            return element_generator(element_params, card_data, options);
-        } else if (element_name.length > 0) {
-            return card_element_unknown(parts, card_data, options);
-        }
+        if(element_name === "")parts=["&nbsp;"];
+        return card_element_unknown(parts, card_data, options);
     }).join("\n");
     result += '</div>';
     return result;
