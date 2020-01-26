@@ -260,7 +260,7 @@ function card_element_fill(params, card_data, options) {
 }
 
 function card_element_unknown(params, card_data, options) {
-    return '<div>Unknown element: ' + params.join('<br />') + '</div>';
+    return '<div>' + params.join('<br />') + '</div>';
 }
 
 function card_element_empty(params, card_data, options) {
@@ -301,7 +301,7 @@ function card_generate_contents(contents, card_data, options) {
         if (element_generator) {
             return element_generator(element_params, card_data, options);
         } else if (element_name.length > 0) {
-            return card_element_unknown(element_params, card_data, options);
+            return card_element_unknown(parts, card_data, options);
         }
     }).join("\n");
     result += '</div>';
