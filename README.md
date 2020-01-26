@@ -3,10 +3,12 @@ rpg-cards
 
 RPG spell/item/monster card generator
 
+Quick and dirty fork to get contents directly showing what is typed.
+
 preview
 =======
 
-Click [here](https://crobi.github.io/rpg-cards/generator/generate.html) for a live preview of this generator.
+Click [here](https://anthonyiv.github.io/rpg-cards/generator/generate.html) for a live preview of this generator.
 
 status of the project
 =====================
